@@ -23,7 +23,7 @@ import type { AgentKind } from './types';
 // detach/cleanup on every mode-toggle to avoid duplicate forwarding — this
 // sidesteps that entirely.
 
-const MAX_BUFFER_BYTES = 200_000;
+const MAX_BUFFER_BYTES = 2_000_000;
 
 /** Identity vars a *parent* claude/codex process exports for its children.
  * If AgentHub itself was launched from inside one of those sessions (dev
